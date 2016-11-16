@@ -1,0 +1,172 @@
+html,body {
+    min-width: 1200px !important;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+.ui-tabs .ui-tabs-panel {
+    background: white !important;
+}
+
+.hidden {
+    display: none
+}
+
+.button {
+    padding: 10px;
+    background-color: #ddd;
+    border: solid 1px #666;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #ddf;
+}
+
+#toolbar {
+    text-align: left;
+    margin-bottom: 15px;
+    border: solid 1px;
+    width: 500px;
+}
+
+#login_dialog{
+	width: 200px;
+}
+
+#chat-area {
+    float: left;
+    width: 600px;
+    height: 500px;
+}
+
+.chat-messages {
+    line-height: 20px;
+    font-size: 15px;
+    background-color: white;
+    height: 380px;
+    border-bottom: solid 2px #ddd;
+    overflow: auto;
+}
+
+#chat-area input {
+    margin-top: 10px;
+    width: 95%;
+}
+
+#roster-area {
+    font-family: 'Helvetica';
+    font-weight: 200;
+    font-size: 12px;
+    float: right;
+    border-left: solid 2px #ddd;
+    padding: 10px;
+    width: 250px;
+    height: 500px;
+}
+
+#menu-button{
+    float: left;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    font-size: 35px;
+    margin-right: 50px;
+}
+
+.chat-name {
+    color: #c33;
+}
+
+.chat-message .me {
+    color: #33c;
+}
+
+.chat-event {
+    font-style: italic;
+    font-size: 75%;
+}
+
+.roster-contact {
+    padding: 3px;
+}
+
+.roster-contact:hover {
+    background-color: #aaa;
+    color: white;
+}
+
+.roster-name {
+    font-size: 150%;
+}
+
+.online {
+    color: #3c3;
+}
+
+.away {
+    color: #c33;
+}
+
+.offline {
+    color: #ccc;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    font-family: 'Helvetica';
+    font-weight: 200;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: silver;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
